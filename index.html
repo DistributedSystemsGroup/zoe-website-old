@@ -93,6 +93,23 @@
         <a name="news"></a>
         <div class="news">
         <h2>News and updates</h2>
+        <h3>Latest stable release of Zoe: 2017.12 (15/12/2017)</h3>
+        We just released version 2017.12 of Zoe, the most notable changes are:
+        <ul>
+          <li>New Docker Engine back-end, the Swarm back-end is now deprecated
+          <li>Nodes and ZApps can be labelled for constraining execution placement, for example to run ZApps only on nodes with GPUs
+          <li>Use non-reserved memory, cores, labels and image availability to take placement decisions
+          <li>The elastic scheduler is considered stable, the simple scheduler is now deprecated
+          <li>Zoe logs are more audit-friendly
+          <li>Distinguish between reserved, allocated and in-use resources
+          <li>Allocate cores automatically, respecting the minimum configured in the ZApp
+          <li>Allow for more options and resource limits to be customized on the web interface (users or admins, not for guests), maximum limits are set in the zoe.conf file
+          <li>Additional volumes can be mounted by specifying them in the zoe.conf file
+          <li>Elastic services that die are rescheduled on a new node
+          <li>Optional support for gathering usage metrics via KairosDB, for now these metrics are only used in the status page plots
+          <li>More configuration options for LDAP authentication
+        </ul>
+
         <h3>Latest stable release of Zoe: 2017.09</h3>
         The 2017.09 tag has been pushed and the new release is available at GitHub and GitLab! The most important changes in this release are the new web interface, the new logo and improved handling of application logs. Many more small changes and user experience improvements have been done to make this one of the smoothest releases ever.
 
